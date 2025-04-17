@@ -35,6 +35,7 @@
    - Ensure all tests pass
    - Add new tests for new features
    - Verify your changes work as expected
+   - commit ur changes to ur branch
 
 3. **Create a Pull Request:**
    - Use the PR template provided
