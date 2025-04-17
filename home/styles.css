@@ -47,7 +47,7 @@ body {
     gap: 2rem;
 }
 
-.nav-links a {
+.nav-links a{
     color: white;
     text-decoration: none;
     font-size: 1rem;
@@ -172,12 +172,6 @@ body {
     line-height: 1.5;
 }
 
-.view-all {
-    color: #3e9fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
 
 .tournament-grid {
     display: grid;
@@ -190,7 +184,35 @@ body {
     background-color: #111c33;
     border-radius: 10px;
     overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
 }
+a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none; /* remove underline */
+  }
+
+  /* Optional: on hover */
+  a:hover {
+    color: darkblue;
+    text-decoration: underline; /* underline on hover if you want */
+  }
+
+  /* Optional: when clicked */
+  a:active {
+    color: red;
+  }
+
+  
+
+  .tournament-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+
 
 .card-image {
     height: 180px;
