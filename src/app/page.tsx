@@ -28,10 +28,7 @@ export default function Home() {
           <a href="#">Academic</a>
         </div>
 
-        <div className="auth-buttons">
-          <button className="btn btn-outline">Sign In</button>
-          <button className="btn btn-primary">Register</button>
-        </div>
+
       </nav>
 
       <main>
