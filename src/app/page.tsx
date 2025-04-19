@@ -1,5 +1,6 @@
 // pages/index.js
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -99,7 +100,7 @@ export default function Home() {
           </header>
 
           <div className="tournament-grid">
-            <a href="/featured-tournaments/tournament1/tournament.html">
+            <Link href="/featured-tournaments">
               <article className="tournament-card">
                 <div className="card-image">
                   <span className="card-tag tag-purple">Void Legends</span>
@@ -130,9 +131,67 @@ export default function Home() {
                   <span className="register-btn">Registration Open</span>
                 </div>
               </article>
-            </a>
+            </Link>
 
-            {/* Repeat other cards as necessary */}
+            <article className="tournament-card">
+                    <div className="card-image">
+                        <span className="card-tag tag-blue">Basketball</span>
+                        <img src="/api/placeholder/400/320" alt="placeholder" />
+                    </div>
+                    <div className="card-content">
+                        <h3 className="card-title">City Basketball League</h3>
+                        <div className="card-info">
+                            <i>📅</i>
+                            Jun 1 - Jun 30
+                        </div>
+                        <div className="card-info">
+                            <i>📍</i>
+                            Metro Sports Arena
+                        </div>
+                        <div className="card-info">
+                            <i>👥</i>
+                            12 / 16 Participants
+                        </div>
+                        <div className="card-info">
+                            <i>🏆</i>
+                            Championship Trophy
+                        </div>
+                    </div>
+                    <div className="card-footer">
+                        <span className="organizer">by Metro Sports Association</span>
+                        <span className="register-btn">Registration Open</span>
+                    </div>
+                </article>
+                <article className="tournament-card">
+                    <div className="card-image">
+                        <span className="card-tag tag-green">Public Speaking</span>
+                        <img src="/api/placeholder/400/320" alt="placeholder" />
+                    </div>
+                    <div className="card-content">
+                        <h3 className="card-title">Collegiate Debate Championship</h3>
+                        <div className="card-info">
+                            <i>📅</i>
+                            Jul 10 - Jul 12
+                        </div>
+                        <div className="card-info">
+                            <i>📍</i>
+                            Central University
+                        </div>
+                        <div className="card-info">
+                            <i>👥</i>
+                            28 / 32 Participants
+                        </div>
+                        <div className="card-info">
+                            <i>🏆</i>
+                            Scholarship Fund
+                        </div>
+                    </div>
+                    <div className="card-footer">
+                        <span className="organizer">by Academic Excellence Foundation</span>
+                        <span className="register-btn">Registration Open</span>
+                    </div>
+                </article>
+           
           </div>
         </section>
 
